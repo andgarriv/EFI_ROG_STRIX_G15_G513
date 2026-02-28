@@ -22,8 +22,8 @@ Use this EFI at your own risk. I am not responsible for any damage, data loss, o
 | dGPU | NVIDIA GeForce RTX 3050 Laptop | Unsupported |
 | Audio | Realtek Audio | Up to macOS Tahoe 26 |
 | Ethernet | Realtek PCIe GbE Family Controller | Up to macOS Tahoe 26 |
-| Wi-Fi | MediaTek Wi-Fi 6 MT7921 | Unsupported (replace card or use USB Wi-Fi) |
-| Bluetooth | MediaTek Bluetooth Adapter | Unsupported |
+| Wi-Fi | ~~MediaTek Wi-Fi 6 MT7921~~ Intel Wi-Fi 6E AX210 | Supported (itlwm.kext) |
+| Bluetooth | Intel Bluetooth | Unsupported (requires IntelBluetoothFirmware) |
 | Storage | NVMe SSD | Up to macOS Tahoe 26 |
 
 ## What Works
@@ -31,6 +31,7 @@ Use this EFI at your own risk. I am not responsible for any damage, data loss, o
 - iGPU acceleration (post-install)
 - Audio
 - Ethernet
+- Wi-Fi
 - USB
 - Keyboard
 - Trackpad
@@ -39,7 +40,6 @@ Use this EFI at your own risk. I am not responsible for any damage, data loss, o
 
 ## What Doesn't Work
 
-- Wi-Fi
 - Bluetooth
 - NVIDIA dGPU
 
@@ -66,6 +66,7 @@ Use this EFI at your own risk. I am not responsible for any damage, data loss, o
 - [ECEnabler](https://github.com/1Revenger1/ECEnabler)
 - [ForgedInvariant](https://github.com/acidanthera/ForgedInvariant)
 - [GenericUSBXHCI](https://github.com/RehabMan/OS-X-Generic-USB3)
+- [itlwm](https://github.com/OpenIntelWireless/itlwm)
 - [Lilu](https://github.com/acidanthera/Lilu)
 - [NootedRed](https://github.com/ChefKissInc/NootedRed)
 - [NVMeFix](https://github.com/acidanthera/NVMeFix)
@@ -107,5 +108,6 @@ Use this EFI at your own risk. I am not responsible for any damage, data loss, o
 - [1Revenger1](https://github.com/1Revenger1) for ECEnabler and AppleMCEReporterDisabler
 - [RehabMan](https://github.com/RehabMan) for GenericUSBXHCI
 - [trulyspinach](https://github.com/trulyspinach) for SMCAMDProcessor
+- [OpenIntelWireless](https://github.com/OpenIntelWireless) for itlwm
 - Hackintosh community
 
